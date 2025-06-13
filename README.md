@@ -4,12 +4,14 @@ A desktop application for building professional resumes with a graphical user in
 
 ## Features
 
-- User authentication (login/register)
-- Multiple resume templates
-- Create, edit, and delete resumes
-- Export resumes to PDF
-- SQLite database for data persistence
-- Clean and intuitive user interface
+- **User Authentication**: Secure login and registration system
+- **Multiple Resume Templates**: Professional, Creative, Modern, and Minimalist styles
+- **Full Resume Management**: Create, edit, delete, and organize multiple resumes
+- **PDF Export**: Generate professional PDF resumes with customizable formatting
+- **SQLite Database**: Persistent data storage for users and resumes
+- **Modern UI**: Clean and intuitive interface with FlatLaf theme
+- **Session Management**: Proper user session handling with logout functionality
+- **Template Content**: Pre-filled resume templates with professional sections
 
 ## Prerequisites
 
@@ -18,14 +20,25 @@ A desktop application for building professional resumes with a graphical user in
 
 ## Setup
 
-1. Clone the repository
-2. Navigate to the project directory
-3. Build the project using Maven:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Aditya-Prakash14/Resume-Builder-Application-in-java.git
+   cd Resume-Builder-Application-in-java
+   ```
+
+2. Build the project using Maven:
+   ```bash
+   mvn clean compile
+   ```
+
+3. Run the application:
+   ```bash
+   mvn exec:java -Dexec.mainClass="com.resumebuilder.Main"
+   ```
+
+   **Alternative:** Build a JAR file and run it:
    ```bash
    mvn clean package
-   ```
-4. Run the application:
-   ```bash
    java -jar target/resume-builder-1.0-SNAPSHOT-jar-with-dependencies.jar
    ```
 
